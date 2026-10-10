@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "id": "1844301928374652928",
+      "text": "Heads up drivers: Massive water main leak flooding 18th & Castro near the hospital entrance! Water is 8 inches deep and traffic is completely blocked. #SFtraffic #SFflood",
+      "author_id": "9876543210",
+      "created_at": "2026-10-10T08:12:00.000Z",
+      "geo": {
+        "place_id": "5a110d312052166f",
+        "coordinates": {
+          "type": "Point",
+          "coordinates": [-122.4350, 37.7600]
+        }
+      },
+      "public_metrics": {
+        "retweet_count": 14,
+        "reply_count": 3,
+        "like_count": 42,
+        "quote_count": 2
+      }
+    },
+    {
+      "id": "1844302581903429632",
+      "text": "RT @sf_resident: Heads up drivers: Massive water main leak flooding 18th & Castro near the hospital entrance! Water is 8 inches deep and traffic is completely blocked. #SFtraffic",
+      "author_id": "1122334455",
+      "created_at": "2026-10-10T08:18:30.000Z",
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 1,
+        "quote_count": 0
+      }
+    },
+    {
+      "id": "1844304892019847168",
+      "text": "Downed tree blocking the right two lanes on Geary Blvd right before Van Ness. Avoid the area if you can. #SFTrafficAlert",
+      "author_id": "5544332211",
+      "created_at": "2026-10-10T08:35:00.000Z",
+      "public_metrics": {
+        "retweet_count": 5,
+        "reply_count": 1,
+        "like_count": 19,
+        "quote_count": 0
+      }
+    }
+  ],
+  "meta": {
+    "newest_id": "1844304892019847168",
+    "oldest_id": "1844301928374652928",
+    "result_count": 3,
+    "next_token": "b26v89c19zqg8o3frst47g12"
+  }
+}

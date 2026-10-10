@@ -1,0 +1,86 @@
+{
+  "@context": [
+    "https://geojson.org/geojson-ld/geojson-context.jsonld",
+    {
+      "@version": "1.1",
+      "wx": "https://api.weather.gov/ontologies/geometry/ontology.jsonld"
+    }
+  ],
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9999.001.2026.101",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-122.4250, 37.7650],
+            [-122.4100, 37.7650],
+            [-122.4100, 37.7780],
+            [-122.4250, 37.7780],
+            [-122.4250, 37.7650]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9999.001.2026.101",
+        "@type": "wx:Alert",
+        "id": "NWS-ALERT-SF-FLOOD-2026-101",
+        "areaDesc": "San Francisco County Urban Drain Corridor; Mission District",
+        "geocode": {
+          "UGC": ["CAC075"],
+          "SAME": ["006075"]
+        },
+        "sent": "2026-10-10T06:15:00Z",
+        "effective": "2026-10-10T06:15:00Z",
+        "onset": "2026-10-10T06:30:00Z",
+        "expires": "2026-10-10T12:00:00Z",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flash Flood Warning",
+        "headline": "Flash Flood Warning issued October 10 at 6:15AM UTC for Mission District Corridor",
+        "description": "At 6:15 AM UTC, emergency management reported torrential urban runoff resulting in rapid flooding of depressed underpasses and street intersections along the Mission Corridor. Up to 1.5 feet of standing water reported across multiple thoroughfares. Impassable for low-clearance vehicles.",
+        "instruction": "Turn around, don't drown when encountering flooded roads. Most flood deaths occur in vehicles.",
+        "senderName": "NWS San Francisco Bay Area CA",
+        "web": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9999.001.2026.101"
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9999.001.2026.102",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.4080, 37.7850]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9999.001.2026.102",
+        "@type": "wx:Alert",
+        "id": "NWS-ALERT-SF-WIND-2026-102",
+        "areaDesc": "Downtown San Francisco Financial & Market Transit Hub",
+        "geocode": {
+          "UGC": ["CAC075"]
+        },
+        "sent": "2026-10-10T07:00:00Z",
+        "effective": "2026-10-10T07:00:00Z",
+        "expires": "2026-10-10T14:00:00Z",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Safety",
+        "severity": "Moderate",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "High Wind Hazard & Structural Advisory",
+        "headline": "High Wind Advisory in effect until 2:00PM UTC for Downtown Corridor",
+        "description": "Gusts up to 55 mph are causing structural debris and utility line hazards along high-rise wind canyons. Construction scaffolding and overhead cables at risk of detachment.",
+        "instruction": "Secure loose outdoor objects. Operators of high-profile vehicles should exercise extreme caution.",
+        "senderName": "NWS San Francisco Bay Area CA",
+        "web": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9999.001.2026.102"
+      }
+    }
+  ]
+}

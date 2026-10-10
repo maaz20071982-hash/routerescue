@@ -1,0 +1,45 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper function to check if the user has verified administrative credentials
+    function isAdmin() {
+      return request.auth != null && 
+        (request.auth.token.admin == true || request.auth.token.role == 'admin');
+    }
+
+    // Incidents Collection: Public read, validated public reporting, admin-only status updates & deletion
+    match /incidents/{incidentId} {
+      // Emergency situational awareness reports are publicly readable
+      allow read: if true;
+
+      // Public reports can be created if data passes field & coordinate validation
+      allow create: if request.resource.data.keys().hasAll(['title', 'category', 'status', 'latitude', 'longitude'])
+                    && request.resource.data.title is string
+                    && request.resource.data.title.size() >= 3
+                    && request.resource.data.title.size() <= 200
+                    && request.resource.data.category in ['FLOODING', 'ROAD_CLOSURE', 'DOWNED_POWER_LINE', 'DEBRIS', 'STRUCTURAL_COLLAPSE', 'GAS_LEAK', 'SEVERE_WEATHER']
+                    && request.resource.data.status in ['UNVERIFIED', 'CORROBORATED']
+                    && request.resource.data.latitude is number
+                    && request.resource.data.latitude >= -90.0
+                    && request.resource.data.latitude <= 90.0
+                    && request.resource.data.longitude is number
+                    && request.resource.data.longitude >= -180.0
+                    && request.resource.data.longitude <= 180.0;
+
+      // Status updates (OFFICIALLY_CONFIRMED, RESOLVED), evidence additions, and deletions require admin privileges
+      allow update, delete: if isAdmin();
+    }
+
+    // Ingestion Audit Logs Collection: Read-only for operators, writeable only by backend admin / service account
+    match /ingestion_logs/{logId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Default deny for all other collections
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "Listing",
+  "data": {
+    "after": "t3_1hjk890",
+    "dist": 2,
+    "children": [
+      {
+        "kind": "t3",
+        "data": {
+          "id": "1hjk890",
+          "name": "t3_1hjk890",
+          "title": "[Road Hazard] Massive sinkhole forming on Folsom St between 4th and 5th",
+          "selftext": "Saw police tape going up 10 minutes ago. Road surface is collapsing under the bus lane. All traffic being detoured to Howard St. Stay safe!",
+          "subreddit": "bayarea",
+          "author": "norcal_commuter",
+          "permalink": "/r/bayarea/comments/1hjk890/road_hazard_massive_sinkhole_forming_on_folsom_st/",
+          "url": "https://www.reddit.com/r/bayarea/comments/1hjk890/road_hazard_massive_sinkhole_forming_on_folsom_st/",
+          "created_utc": 1791621000.0,
+          "score": 87,
+          "num_comments": 24,
+          "is_self": true
+        }
+      },
+      {
+        "kind": "t3",
+        "data": {
+          "id": "1hjk912",
+          "name": "t3_1hjk912",
+          "title": "Flooding along Embarcadero near Ferry Building during king tide",
+          "selftext": "Water splashing over the seawall onto the northbound bicycle path and curb lane. Depth looks around 4-6 inches in low spots.",
+          "subreddit": "sanfrancisco",
+          "author": "embarcadero_walker",
+          "permalink": "/r/sanfrancisco/comments/1hjk912/flooding_along_embarcadero_near_ferry_building/",
+          "url": "https://www.reddit.com/r/sanfrancisco/comments/1hjk912/flooding_along_embarcadero_near_ferry_building/",
+          "created_utc": 1791622200.0,
+          "score": 45,
+          "num_comments": 12,
+          "is_self": true
+        }
+      }
+    ]
+  }
+}
